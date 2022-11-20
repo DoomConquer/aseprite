@@ -39,7 +39,7 @@ jobs:
         if [[ "${{ runner.os }}" == "Windows" ]] ; then
           export enable_ccache=off
         else
-          export enable_ccache=on
+          export enable_ccache=off
         fi
         curl -L https://github.com/blueloveTH/aseprite/releases/download/v0.01/skia.zip --output skia.zip
         7z x skia.zip
